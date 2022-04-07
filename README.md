@@ -21,13 +21,11 @@
 
 ## Features
 
-1. GalleryView (default)
+### GalleryView (default)
 
 GalleryView provides a layout used by Google Photos and 500px as what shows in the screenshot above which I think could be used in most scenarios. It displays photos with the same height in each line and keeps the original aspect ratio of each photo.
 
 The implementation was inspired by a post [Pure CSS implementation of Google Photos / 500px image layout](https://github.com/xieranmaya/blog/issues/6).
-
-2. ...
 
 ## Getting Started
 
