@@ -1,4 +1,5 @@
 <script lang="ts">
+	import type { Photo } from "./index.d";
 	export let photos: Photo[] = [];
 	export let baseHeight: number = 200;
 	export let gap: number = 2;
