@@ -77,7 +77,7 @@ npm run dev
 
 2. Edit the component files in `src/lib`, save it and watch the magic happens.
 
-3. Navigate to [localhost:3000](http://localhost:3000) to see the components live.
+3. Navigate to [localhost:7070](http://localhost:7070) to see the components live.
 
 ## Testing
 
