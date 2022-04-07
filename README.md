@@ -1,6 +1,6 @@
 # Svelte Gallery View
 
-## A Svalte component that provides a Google Photos / 500px style photo gellery view.
+## A collection of Svalte components for displaying photos, and currently focusing on a component that provides a layout used by Google Photos / 500px.
 
 ![Screenshot](/public/screenshot.jpeg?raw=true "Screenshot")
 
@@ -21,11 +21,13 @@
 
 ## Features
 
--   [Preprocessing](https://github.com/sveltejs/svelte-preprocess/blob/main/README.md)
--   [Formating](https://github.com/sveltejs/prettier-plugin-svelte)
--   [Linting](https://github.com/sveltejs/eslint-plugin-svelte3)
--   [Storybook](https://storybook.js.org/docs/svelte/get-started/introduction)
--   [Testing](https://storybook.js.org/docs/svelte/workflows/testing-with-storybook)
+1. GalleryView (default)
+
+GalleryView provides a layout used by Google Photos and 500px as what shows in the screenshot above which I think could be used in most scenarios. It displays photos with the same height in each line and keeps the original aspect ratio of each photo.
+
+The implementation was inspired by a post [Pure CSS implementation of Google Photos / 500px image layout](https://github.com/xieranmaya/blog/issues/6).
+
+2. ...
 
 ## Getting Started
 
@@ -40,7 +42,7 @@ npm install svelte-gallery-view
 2. Import the module:
 
 ```javascript
-import { GalleryView } from 'svelte-gallery-view'
+import GalleryView from 'svelte-gallery-view'
 ```
 
 2. Add GalleryView to your view:
@@ -51,7 +53,23 @@ import { GalleryView } from 'svelte-gallery-view'
 
 ## APIs
 
-1. GalleryView
+### GalleryView
+
+#### Properties
+
+- `photos` (required)
+
+```typescript
+{
+    url: string;
+    width: number;
+    height: number;
+    info?: string;
+}[]
+```
+
+- `baseHeight` (optional, default 200)
+- `gap` (optional, default 2)
 
 ## Developing
 

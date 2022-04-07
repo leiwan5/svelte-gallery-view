@@ -1,5 +1,5 @@
 <script>
-	import { GalleryView } from '$lib';
+	import GalleryView from '$lib';
 	import photos from './photos.json';
 </script>
 

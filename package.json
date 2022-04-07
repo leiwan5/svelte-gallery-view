@@ -75,5 +75,6 @@
         "test": "start-server-and-test storybook http://localhost:6006 cy:run"
     },
     "type": "module",
-    "version": "0.0.1"
+    "main": "src/lib/index.ts",
+    "version": "0.0.2"
 }

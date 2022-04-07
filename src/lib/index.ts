@@ -1,3 +1,3 @@
 import GalleryView from './GalleryView.svelte';
 
-export { GalleryView };
+export default GalleryView;
