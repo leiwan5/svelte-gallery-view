@@ -11,7 +11,7 @@
 
 1. [Features](#features)
 1. [Getting started](#getting-started)
-1. [API Documentation](#apis)
+1. [APIs](#apis)
 1. [Developing](#developing)
 1. [Testing](#testing)
 1. [Publishing to npm](#publishing-to-npm)
