@@ -1,5 +1,6 @@
 <script lang="ts">
 	import type { Photo } from "./index.d";
+	import 'lazysizes';
 	export let photos: Photo[] = [];
 	export let baseHeight: number = 200;
 	export let gap: number = 2;
@@ -17,7 +18,7 @@
 				"
 			>
 				<div class="spacer" />
-				<img src={photo.url} alt={photo.info} />
+				<img class="lazyload" data-src={photo.url} alt={photo.info} />
 			</div>
 		{/each}
 		{#each new Array(1) as item}
@@ -54,6 +55,7 @@
 		object-fit: cover;
 		position: absolute;
 		width: 100%;
+		height: 100%;
 		top: 0;
 		vertical-align: bottom;
 	}
