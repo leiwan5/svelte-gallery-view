@@ -1,4 +1,5 @@
 <script lang="ts">
+	import Image from "./Image.svelte";
 	import type { Photo } from "./index.d";
 	import 'lazysizes';
 	export let photos: Photo[] = [];
@@ -18,7 +19,7 @@
 				"
 			>
 				<div class="spacer" />
-				<img class="lazyload" data-src={photo.url} alt={photo.info} />
+				<Image src={photo.url} alt={photo.info} class="lazyload" />
 			</div>
 		{/each}
 		{#each new Array(1) as item}
@@ -51,7 +52,7 @@
 		display: block;
 		padding-bottom: var(--ratio);
 	}
-	img {
+	.img :global(img) {
 		object-fit: cover;
 		position: absolute;
 		width: 100%;
