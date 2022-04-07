@@ -2,7 +2,7 @@
 	export let alt: string | undefined = undefined;
 	export let src: string | Promise<string> = undefined;
 	export let presrc: string =
-		'iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==';
+		'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+P+/HgAFhAJ/wlseKgAAAABJRU5ErkJggg==';
 	let klass: string | undefined = undefined;
 	export { klass as class };
 </script>
