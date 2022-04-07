@@ -22,7 +22,7 @@
 				<Image src={photo.url} alt={photo.info} class="lazyload" />
 			</div>
 		{/each}
-		{#each new Array(1) as item}
+		{#each new Array(10) as item}
 			<div class="dummy" />
 		{/each}
 	</div>
@@ -42,10 +42,10 @@
 	.img {
 		flex-grow: var(--flex-grow);
 		width: var(--width);
-		background-color: #eee;
 		margin: var(--gap);
 		align-self: flex-start;
 		position: relative;
+		border: none;
 	}
 	.spacer {
 		content: '';
@@ -59,9 +59,10 @@
 		height: 100%;
 		top: 0;
 		vertical-align: bottom;
+		border: 0;
 	}
 	.dummy {
 		height: 0;
-		flex-grow: 9999;
+		flex-grow: 200;
 	}
 </style>
