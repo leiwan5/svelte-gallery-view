@@ -31,8 +31,6 @@ The implementation was inspired by a post [Pure CSS implementation of Google Pho
 
 1. Install the module:
 
-Option #1: Clone it with Github's "Use this template" option:
-
 ```bash
 npm install svelte-gallery-view
 ```
