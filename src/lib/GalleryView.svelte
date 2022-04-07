@@ -1,10 +1,5 @@
 <script lang="ts">
-	export let photos: {
-		info?: string;
-		url: string;
-		width: number;
-		height: number;
-	}[] = [];
+	export let photos: Photo[] = [];
 	export let baseHeight: number = 200;
 	export let gap: number = 2;
 </script>
