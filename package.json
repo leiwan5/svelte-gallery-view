@@ -1,8 +1,8 @@
 {
     "author": {
-        "email": "~TODO~",
-        "name": "~TODO~",
-        "url": "~TODO~"
+        "email": "cnkknd@gmail.com",
+        "name": "Lei Wang",
+        "url": "https://github.com/leiwan5"
     },
     "devDependencies": {
         "@babel/core": "7.17.9",
@@ -37,7 +37,7 @@
         "tslib": "2.3.1",
         "typescript": "4.6.3"
     },
-    "homepage": "~TODO~",
+    "homepage": "https://github.com/leiwan5/svelte-gallery-view",
     "license": "~TODO~",
     "lint-staged": {
         "*.{js, ts, svelte}": [
@@ -47,7 +47,7 @@
             "prettier --write --plugin-search-dir=."
         ]
     },
-    "name": "~TODO~",
+    "name": "svelte-gallery-view",
     "prettier": {
         "singleQuote": true,
         "tabWidth": 4,
@@ -55,7 +55,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "~TODO~"
+        "url": "https://github.com/leiwan5/svelte-gallery-view"
     },
     "scripts": {
         "build": "svelte-kit build",
