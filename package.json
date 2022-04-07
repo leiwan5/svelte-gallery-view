@@ -38,7 +38,7 @@
         "typescript": "4.6.3"
     },
     "homepage": "https://github.com/leiwan5/svelte-gallery-view",
-    "license": "~TODO~",
+    "license": "LGPL-3.0+",
     "lint-staged": {
         "*.{js, ts, svelte}": [
             "eslint --fix"
