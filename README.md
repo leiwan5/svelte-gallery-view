@@ -2,6 +2,8 @@
 
 ## A Svalte component that provides a Google Photos / 500px style photo gellery view.
 
+![Screenshot](/public/screenshot.jpeg?raw=true "Screenshot")
+
 [![](https://github.com/leiwan5/svelte-gallery-view/workflows/Node%20CI/badge.svg)](https://github.com/leiwan5/svelte-gallery-view/actions?query=workflow%3A%22Node+CI%22)
 [![Known Vulnerabilities](https://snyk.io/test/github/leiwan5/svelte-gallery-view/badge.svg)](https://snyk.io/test/github/leiwan5/svelte-gallery-view)
 [![Renovate enabled](https://img.shields.io/badge/renovate-enabled-brightgreen.svg)](https://renovatebot.com/)

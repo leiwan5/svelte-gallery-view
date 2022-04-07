@@ -3,4 +3,4 @@
 	import photos from './photos.json';
 </script>
 
-<GalleryView photos={photos} baseHeight={160} gap={2} />
+<GalleryView photos={photos} baseHeight={120} gap={2} />
