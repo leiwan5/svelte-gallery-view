@@ -69,6 +69,7 @@
 	}
 	.dummy {
 		height: 0;
-		flex-grow: 200;
+		width: 100px;
+		flex-grow: 100;
 	}
 </style>
