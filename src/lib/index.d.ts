@@ -4,7 +4,8 @@ export interface Photo {
 	url: string;
 	width: number;
 	height: number;
-	info?: string;
+	title?: string;
+	metadata?: {[key:string]: string | number};
 }
 
 export default GalleryView;
