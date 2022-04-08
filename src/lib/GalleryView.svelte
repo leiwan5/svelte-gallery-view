@@ -1,17 +1,19 @@
 <script lang="ts">
 	import Image from "./Image.svelte";
 	import type { Photo } from "./index.d";
-	import 'lazysizes';
 	export let photos: Photo[] = [];
 	export let baseHeight: number = 200;
 	export let gap: number = 2;
+	export let imageClass: string | undefined = undefined;
+	export let imageOnClick: () => any;
 </script>
 
 <div class="gallery">
 	<div class="section" style="--gap: {gap}px;">
 		{#each photos as photo}
 			<div
-				class="img"
+				class={`image ${imageClass}`}
+				on:click={imageOnClick}
 				style="
 					--ratio: {(photo.height * 100.0) / photo.width}%;
 					--width: {(baseHeight * photo.width) / photo.height}px;
@@ -19,7 +21,7 @@
 				"
 			>
 				<div class="spacer" />
-				<Image src={photo.url} alt={photo.info} class="lazyload" />
+				<Image src={photo.url} alt={photo.info} class="img lazyload" />
 			</div>
 		{/each}
 		{#each new Array(10) as item}
@@ -39,7 +41,7 @@
 		min-width: 200px;
 		height: 0;
 	}
-	.img {
+	.image {
 		flex-grow: var(--flex-grow);
 		width: var(--width);
 		margin: var(--gap);
@@ -52,7 +54,7 @@
 		display: block;
 		padding-bottom: var(--ratio);
 	}
-	.img :global(img) {
+	.image :global(.img) {
 		object-fit: cover;
 		position: absolute;
 		width: 100%;

@@ -77,7 +77,5 @@
     "type": "module",
     "main": "src/lib/index.ts",
     "version": "0.0.12",
-    "peerDependencies": {
-        "lazysizes": "^5.3.2"
-    }
+    "peerDependencies": {}
 }
