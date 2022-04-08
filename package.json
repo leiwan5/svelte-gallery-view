@@ -76,6 +76,6 @@
     },
     "type": "module",
     "main": "src/lib/index.ts",
-    "version": "0.0.14",
+    "version": "0.0.15",
     "peerDependencies": {}
 }
