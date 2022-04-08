@@ -4,16 +4,16 @@
 	export let photos: Photo[] = [];
 	export let baseHeight: number = 200;
 	export let gutter: number = 2;
-	export let imageClass: string | undefined = undefined;
-	export let onImageClick: ((Photo) => any) | undefined = undefined;
+	export let photoClass: string | undefined = undefined;
+	export let onPhotoClick: ((photo: Photo) => any) | undefined = undefined;
 </script>
 
 <div class="gallery">
 	<div class="section" style="--gutter: {gutter}px;">
 		{#each photos as photo}
 			<div
-				class={`image ${imageClass}`}
-				on:click={() => onImageClick?.(photo)}
+				class={`image ${photoClass ?? ''}`}
+				on:click={() => onPhotoClick?.(photo)}
 				style="
 					--ratio: {(photo.height * 100.0) / photo.width}%;
 					--width: {(baseHeight * photo.width) / photo.height}px;

@@ -7,5 +7,6 @@
 	photos={photos}
 	baseHeight={120}
 	gutter={4}
-	onImageClick={console.log}
+	photoClass="photo"
+	onPhotoClick={console.log}
 />

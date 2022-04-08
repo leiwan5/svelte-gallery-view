@@ -48,6 +48,10 @@ import GalleryView from 'svelte-gallery-view'
     photos={photos}
     gutter={2}
     baseHeight={200}
+    photoClass="photo"
+    onPhotoClick={(photo) => {
+        showPhotoDetails(photo.id);
+    }}
 />
 ```
 
@@ -102,6 +106,13 @@ baseHeight: number = 200;
 /* Gap between every two photos, in px.
 */
 gutter: number = 2;
+```
+- `photoClass` (optional, default: undefined)
+```javascript
+/**
+/* Extra class names would be applied to the photo elements.
+*/
+photoClass: string | undefined;
 ```
 - `onPhotoClick` (optional, default: undefined)
 ```javascript
