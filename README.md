@@ -44,7 +44,11 @@ import GalleryView from 'svelte-gallery-view'
 2. Add GalleryView to your view:
 
 ```javascript
-<GalleryView photos={photos} gap={2} baseHeight={200} />
+<GalleryView
+    photos={photos}
+    gutter={2}
+    baseHeight={200}
+/>
 ```
 
 ## APIs
@@ -54,18 +58,58 @@ import GalleryView from 'svelte-gallery-view'
 #### Properties
 
 - `photos` (required)
-
 ```typescript
-{
-    url: string;
-    width: number;
-    height: number;
-    info?: string;
-}[]
-```
 
-- `baseHeight` (optional, default 200)
-- `gap` (optional, default 2)
+interface Photo {
+	/**
+ 	* URL or unsolved URL of the photo.
+    */
+	url: string | Promise<string>;
+	/**
+ 	* Width of the photo.
+    */
+	width: number;
+	/**
+ 	* Height of the photo.
+    */
+	height: number;
+	/**
+ 	* Extra information which shown as a tooltip text on the photo.
+    */
+	title?: string;
+	/**
+ 	* Any properties could be useful in callback function onPhotoClick.
+    */
+	[key: string]: unknown;
+};
+
+//...
+
+photos: Photo[] = [];
+```
+- `baseHeight` (optional, default: 200)
+
+```javascript
+/**
+/* Base height of each line, in px. The final height of each line
+/* would be various because of adjustments.
+*/
+baseHeight: number = 200;
+```
+- `gutter` (optional, default: 2)
+```javascript
+/**
+/* Gap between every two photos, in px.
+*/
+gutter: number = 2;
+```
+- `onPhotoClick` (optional, default: undefined)
+```javascript
+/**
+/* Callback function which handles click events triggered by each photo.
+*/
+onPhotoClick: ((photo: Photo) => any) | undefined;
+```
 
 ## Developing
 

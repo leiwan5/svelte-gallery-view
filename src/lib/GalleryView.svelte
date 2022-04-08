@@ -5,7 +5,7 @@
 	export let baseHeight: number = 200;
 	export let gutter: number = 2;
 	export let imageClass: string | undefined = undefined;
-	export let imageOnClick: ((Photo) => any) | undefined = undefined;
+	export let onImageClick: ((Photo) => any) | undefined = undefined;
 </script>
 
 <div class="gallery">
@@ -13,7 +13,7 @@
 		{#each photos as photo}
 			<div
 				class={`image ${imageClass}`}
-				on:click={() => imageOnClick?.(photo)}
+				on:click={() => onImageClick?.(photo)}
 				style="
 					--ratio: {(photo.height * 100.0) / photo.width}%;
 					--width: {(baseHeight * photo.width) / photo.height}px;
